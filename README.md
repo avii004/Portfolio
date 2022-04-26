@@ -21,7 +21,7 @@ HTML CSS Portfolio
         <p><p class="indent"></p>Hello, My name is Gracie Navarro. I was born and rasied in Chicago, Illinoise.
           I currently reside in Austin, Tx. Most of my work background is in healthcare, I've been doing this for 
           8 years in different practices. From family practice, cardiology, gariatric, dermatology, MOH's surgery to
-          urgent care which is what i'm currently in now. I'm looking forward to this new
+          urgent care-emergency room. I'm looking forward to this new
           transition. 
         </p>
         </p>
