@@ -1,45 +1,292 @@
+:root {
+    --main-color:font-weight
+}
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial;
     margin: 0;
-  }
-  
-  .headers {
-    padding: 60px;
-    text-align: center;
-    background: red;
-    color: #fff;
-    font-size: 100px;
-  }
+    padding: 0;
+    box-sizing: border-box;
+    }
 
-  .contact {
-      background: blue
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #ffcccc;
+      
+    }
+
+    header a {
+      text-decoration: none;
+
+    }
+
+    header {
+      background-color: #ffcccc;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; 
+    }
+
+    header h1 {
+      font-weight: bold;
+      font-size: 24px;
+      margin: 10px 0;
+      padding: 5px 5px 5px 30px;
+      background-color: var(--main-color);
+    }
+
+    header h1 a {
+      color: black;
+    }
+
+    header nav {
+      display: flex;
+      margin-right: 30px;
+    }
+
+    header nav ul {
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    header nav ul li a {
+      font-size: 16px;
+      padding: 10px;
+      color: var(--main-color);
+    }
+
+    .hero {
+      background-image:URL ;
+      background-size:cover;
+      background-position:bottom;
+      width: 100%;
+      height: 300px;
+      display:flex;
+      justify-content: flex-end;
+      
+    }
+
+    .hero figure {
+      border: 2px solid var_--main-color);
+      display: flex;
+      flex-flow: column;
+      max-width: 250px;
+      position: relative;
+      bottom: 20px;
+      right: 20px;
+      border-radius: 5px;
+     }
+
+     .hero figure figcaption {
+       background-color: black;
+       color: #fff;
+       padding: 3px;
+       text-align: center;
+     }
+
+     /*About me section */
+
+     #about-me {
+       width: 80%;
+       margin:0 auto;
+     }
+
+     .flex-container {
+       display: flex;
+       margin: 20px; 0;
+       align-items:center;
+     }
+
+     .flex-container h3 {
+      width: 30%;
+      text-align: right;
+      padding-right: 20px;
+      font-size: 34px;
+      line-height: 1.3;
+      align-self: flex-start;
+     }
+
+     .flex-container p {
+       width: 70%;
+       padding: 10px 0 20px 20px;
+       border-left: 2px solid black;
+     }
+
+     /*work section*/
+
+     #work {
+       margin: 0 auto;
+       width: 80%;
+       display: flex;
+     }
+
+     .work-title {
+       width:30%;
+       text-align: right;
+       padding-right: 20px;
+       font-size: 34px;
+     }
+
+     .wrap {
+       display: flex;
+       width: 70%;
+       justify-content:space between;
+       align-items: center;
+       flex-wrap: wrap;
+       padding-left: 20px; 
+       border-left: 2px solid black;
+       margin-bottom: 20px;
+       padding-bottom: 20px;
+     }
+
+     .main-setting {
+       width: 49%;
+       margin-top: 15px;
+       height: 200px;
+     }
+
+     .item1 {
+       background: URL(/*RUN BUDDY URL*/) no-repeat;
+       background-position: center;
+       background-size: cover;
+       width:100%;
+       margin-top: 15px;
+       height: 380px;
+     }
+
+     .item2 {
+       background: URL(/*INSERT URL*/) no-repeat;
+       background-size: cover;
+     }
+
+     .item3 {
+       background:url(/*URLinsert*/) no-repeat;
+       background-size: cover;
+       background-position: center center;
+     }
+
+     .item4 {
+       background:url(/*URL insert*/) no-repeat;
+       background-size: cover;
+       background-position: center center; 
+      }
+
+      .item5 {
+        background:url(/*URL insert*/) no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .overlay {
+        background-color: rgba(198, 206, 207, 0.3);
+        width: 100%;
+        height: 100%;
+        border: 4px solid var(--main-color);
+        position: relative;
+      }
+
+      .overlay:hover {
+        background-color:rgba(76, 211, 235, 0);
+        }
+
+        .text-wrap {
+          background-color: var(--main-color);
+          display: flex;
+          width: 140px;
+          flex-wrap: wrap;
+          position: absolute;
+          bottom: 20px;
+          padding: 5px 5px;
+          color:gray;
+        }
+
+/* content me section*/
+
+#contact-me {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+
+.contact-me-title {
+  width: 30%;
+  text-align: right;
+  padding-right: 20x;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.wrap ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.wrap ul a li {
+  display: flex;
+  text-decoration: none;
+  border-bottom: 3px solid var(--main-color)
+  font-size: 18px;
+  padding: 20px 10px 5px 10px;
+  margin: 0 15px;
+}
+
+.wrap ul a {
+  text-decoration: none;
+  color: black;
+}
+
+/* media section*/
+
+@media only screen and (max-width: 575px) {
+  #about-me {
+    width: 90%;
   }
-  
-  .card {
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    float: left;
-    width: 25%;
+  .flex-container h3 {
+    width: 20%;
+    font-size: 18;
   }
-  
-  .card header {
-    padding: 20px;
+  .flex-container p {
+    width: 80%;
   }
-  
-  .card p {
-    text-align: center;
+}
+
+/*work section */
+#work {
+  width: 90%
+}
+.work-title {
+  font-size: 18px;
+  width: 20%;
+}
+
+/*contact me section*/
+#contact-me {
+  width: 90%;
+}
+.contact-me-title {
+  width: 20%;
+}
+.contact-me-title h3 {
+  font-size: 15px;
+}
+.wrap {
+  width: 80%;
+}
+.item1 {
+  height: 300px;
+  width: 90%;
+}
+.item2, .item3, .item4, .item5 {
+  width: 90%;
+  height: 200px;
   }
-  
-  .card img {
-    width: 100%;
+}
+
+@media only screen and (max-width:325px) {
+  .contact-me-title h3{
+    font-size: 13px;
+    padding-right: 2px;
   }
-  
-  /* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
-  
-  /* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
-  
+}
